@@ -9,8 +9,6 @@ body {
   word-wrap: break-word;
 }
 
-
-
 body.cke_show_borders { 
 	background: none;
 	font-size: 75%;
@@ -24,6 +22,7 @@ body.cke_show_borders {
 
 /* Remove negative letter spacing */
 h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, Helvetica, sans-serif; 
   letter-spacing: 0;  
   font-weight: normal;
 }
@@ -323,6 +322,13 @@ table tbody tr.even td {
     z-index: 99999 !important;
 }
 
+.region-preface-third-inner .block-menu ul li.leaf {
+   list-style: none;
+   list-style-image: none;
+   border: 1px solid #ddd;
+   padding: 20px 20px;
+}
+
 /*
 .front .region-preface-first-inner, 
 .front .region-preface-third-inner{
@@ -330,3 +336,6 @@ table tbody tr.even td {
   padding: 20px 20px;
 }
 */
+
+
+
