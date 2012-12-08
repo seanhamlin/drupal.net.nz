@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the drupalnz_company feature.
+ */
+
+include_once 'drupalnz_company.features.inc';
