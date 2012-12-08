@@ -78,7 +78,7 @@ function drupalnz_plain_page_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '41',
+        'weight' => 41,
       ),
     ),
   );
@@ -157,8 +157,236 @@ function drupalnz_plain_page_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-plain_page-meta_abstract'.
+  $fields['node-plain_page-meta_abstract'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'meta_abstract',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'metatags_quick',
+      'settings' => array(
+        'max_length' => '160',
+        'meta_name' => 'abstract',
+      ),
+      'translatable' => '0',
+      'type' => 'metatags_quick',
+    ),
+    'field_instance' => array(
+      'bundle' => 'plain_page',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'metatags_quick',
+          'settings' => array(),
+          'type' => 'metatags_quick_default',
+          'weight' => 1,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'meta_abstract',
+      'formatter' => 'metatags_quick_default',
+      'label' => '(Meta)Abstract',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'metatags_quick',
+        'settings' => array(),
+        'type' => 'metatags_quick_textfield',
+        'weight' => 0,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-plain_page-meta_canonical'.
+  $fields['node-plain_page-meta_canonical'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'meta_canonical',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'metatags_quick',
+      'settings' => array(
+        'max_length' => '160',
+        'meta_name' => 'canonical',
+      ),
+      'translatable' => '0',
+      'type' => 'metatags_quick',
+    ),
+    'field_instance' => array(
+      'bundle' => 'plain_page',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'metatags_quick',
+          'settings' => array(),
+          'type' => 'metatags_quick_default',
+          'weight' => 2,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'meta_canonical',
+      'formatter' => 'metatags_quick_default',
+      'label' => '(Meta)Canonical URL',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'metatags_quick',
+        'settings' => array(),
+        'type' => 'metatags_quick_textfield',
+        'weight' => 0,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-plain_page-meta_description'.
+  $fields['node-plain_page-meta_description'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'meta_description',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'metatags_quick',
+      'settings' => array(
+        'max_length' => '160',
+        'meta_name' => 'description',
+      ),
+      'translatable' => '0',
+      'type' => 'metatags_quick',
+    ),
+    'field_instance' => array(
+      'bundle' => 'plain_page',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'metatags_quick',
+          'settings' => array(),
+          'type' => 'metatags_quick_default',
+          'weight' => 3,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'meta_description',
+      'formatter' => 'metatags_quick_default',
+      'label' => '(Meta)Description',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'metatags_quick',
+        'settings' => array(),
+        'type' => 'metatags_quick_textarea',
+        'weight' => 0,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-plain_page-meta_keywords'.
+  $fields['node-plain_page-meta_keywords'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'meta_keywords',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'metatags_quick',
+      'settings' => array(
+        'max_length' => '160',
+        'meta_name' => 'keywords',
+      ),
+      'translatable' => '0',
+      'type' => 'metatags_quick',
+    ),
+    'field_instance' => array(
+      'bundle' => 'plain_page',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'metatags_quick',
+          'settings' => array(),
+          'type' => 'metatags_quick_default',
+          'weight' => 4,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'meta_keywords',
+      'formatter' => 'metatags_quick_default',
+      'label' => '(Meta)Keywords',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'metatags_quick',
+        'settings' => array(),
+        'type' => 'metatags_quick_textfield',
+        'weight' => 0,
+      ),
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
+  t('(Meta)Abstract');
+  t('(Meta)Canonical URL');
+  t('(Meta)Description');
+  t('(Meta)Keywords');
   t('Attachments');
   t('Body');
 
