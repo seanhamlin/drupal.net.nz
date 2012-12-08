@@ -1,7 +1,7 @@
 name = drupalnz_views
 description = Provides all views
 core = 7.x
-package = Features
+package = Drupal.net.nz
 version = 7.x-1.0
 project = drupalnz_views
 dependencies[] = ctools
