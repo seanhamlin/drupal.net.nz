@@ -58,7 +58,7 @@ function drupalnz_showcase_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 0,
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -143,13 +143,14 @@ function drupalnz_showcase_field_default_fields() {
       'description' => 'The company who developed the site.',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'entityreference',
           'settings' => array(
-            'link' => FALSE,
+            'links' => 0,
+            'view_mode' => 'teaser',
           ),
-          'type' => 'entityreference_label',
-          'weight' => 1,
+          'type' => 'entityreference_entity_view',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -219,14 +220,11 @@ function drupalnz_showcase_field_default_fields() {
           'label' => 'above',
           'module' => 'date',
           'settings' => array(
-            'format_type' => 'long',
-            'fromto' => 'both',
-            'multiple_from' => '',
-            'multiple_number' => '',
-            'multiple_to' => '',
+            'interval' => '2',
+            'interval_display' => 'time ago',
           ),
-          'type' => 'date_default',
-          'weight' => 5,
+          'type' => 'format_interval',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -309,7 +307,7 @@ function drupalnz_showcase_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 4,
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -372,14 +370,10 @@ function drupalnz_showcase_field_default_fields() {
       'description' => 'Please upload some great examples of the website. Showcase it to others. Show off the neat functionality.',
       'display' => array(
         'default' => array(
-          'label' => 'above',
-          'module' => 'image',
-          'settings' => array(
-            'image_link' => '',
-            'image_style' => '',
-          ),
-          'type' => 'image',
-          'weight' => 3,
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -454,11 +448,11 @@ function drupalnz_showcase_field_default_fields() {
       'description' => 'The URL of the homepage.',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'link',
           'settings' => array(),
           'type' => 'link_default',
-          'weight' => 2,
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',
