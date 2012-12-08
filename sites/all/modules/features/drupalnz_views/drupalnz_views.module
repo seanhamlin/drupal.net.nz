@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the drupalnz_views feature.
+ */
+
+include_once 'drupalnz_views.features.inc';

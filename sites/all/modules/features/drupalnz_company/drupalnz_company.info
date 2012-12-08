@@ -2,6 +2,7 @@ name = drupalnz_company
 description = Provides the content type and all fields
 core = 7.x
 package = Drupal.net.nz
+php = 5.2.4
 version = 7.x-1.0
 project = drupalnz_company
 dependencies[] = ctools

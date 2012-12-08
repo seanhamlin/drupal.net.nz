@@ -1,0 +1,11 @@
+name = drupalnz_views
+description = Provides all views
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = drupalnz_views
+dependencies[] = ctools
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:1
+features[views_view][] = showcase_own_content
