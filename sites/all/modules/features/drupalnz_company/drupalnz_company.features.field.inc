@@ -418,6 +418,67 @@ function drupalnz_company_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-company-field_phone'.
+  $fields['node-company-field_phone'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_phone',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'phone',
+      'settings' => array(
+        'country' => 'nz',
+      ),
+      'translatable' => '0',
+      'type' => 'phone',
+    ),
+    'field_instance' => array(
+      'bundle' => 'company',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => 'The main contact phone number',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'phone',
+          'settings' => array(),
+          'type' => 'phone',
+          'weight' => 10,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'fences_wrapper' => 'p',
+      'field_name' => 'field_phone',
+      'label' => 'Phone number',
+      'required' => 0,
+      'settings' => array(
+        'ca_phone_parentheses' => 1,
+        'ca_phone_separator' => '-',
+        'phone_country_code' => 0,
+        'phone_default_country_code' => '1',
+        'phone_int_max_length' => 15,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'phone',
+        'settings' => array(),
+        'type' => 'phone_textfield',
+        'weight' => '7',
+      ),
+    ),
+  );
+
   // Exported field: 'node-company-field_sectors'.
   $fields['node-company-field_sectors'] = array(
     'field_config' => array(
@@ -740,8 +801,10 @@ function drupalnz_company_field_default_fields() {
   t('LinkedIn');
   t('Links');
   t('Logo');
+  t('Phone number');
   t('Sectors');
   t('Services');
+  t('The main contact phone number');
   t('Twitter');
   t('Website');
 
