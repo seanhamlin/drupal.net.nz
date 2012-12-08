@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+/**
+ * This CSS supports some of the per-field layouts done in the UI
+ */
+
+.col-one-third {
+  float:left;
+  width:33%;
+}
+.col-two-thirds {
+  float:left;
+  width:66%;
+}
