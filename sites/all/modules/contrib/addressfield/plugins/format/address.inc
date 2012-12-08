@@ -337,6 +337,33 @@ function addressfield_format_address_generate(&$format, $address, $context = arr
       'WA' => t('Western Australia'),
     );
   }
+  else if ($address['country'] == 'NZ') {
+    $format['locality_block']['locality']['#title'] = ('City/Town');
+    $format['locality_block']['postal_code']['#title'] = t('Postcode');
+    $format['locality_block']['postal_code']['#required'] = FALSE;
+    $format['locality_block']['administrative_area']['#title'] = t('Region');
+    $format['locality_block']['administrative_area']['#required'] = FALSE;
+    $format['locality_block']['administrative_area']['#options'] = array(
+      ''   => t('--'),
+      'AUK' => t('Auckland'),
+      'BOP' => t('Bay of Plenty'),
+      'CAN' => t('Canterbury'),
+      'HKB' => t('Hawke\'s Bay'),
+      'MWT' => t('Manawatu-Wanganui'),
+      'NTL' => t('Northland'),
+      'OTA' => t('Otago'),
+      'STL' => t('Southland'),
+      'TKI' => t('Taranaki'),
+      'WKO' => t('Waikato'),
+      'WGN' => t('Wellington'),
+      'WTC' => t('West Coast'),
+      'GIS' => t('Gisborne District'),
+      'MBH' => t('Marlborough District'),
+      'NSN' => t('Nelson City'),
+      'TAS' => t('Tasman District'),
+      'CIT' => t('Chatham Islands Territory'),
+    );
+  }
 
   // Those countries tend to put the postal code after the locality.
   if (in_array($address['country'], array('AU', 'BD', 'BF', 'BH', 'BM', 'BN', 'BT', 'CA', 'FM', 'GB', 'ID', 'IN', 'JM', 'JO', 'KH', 'LB', 'LS', 'LV', 'MM', 'MN', 'MV', 'MW', 'NG', 'NP', 'NZ', 'PE', 'PK', 'PR', 'PW', 'SA', 'SG', 'SO', 'TH', 'US', 'VI', 'VG', 'VN'))) {
