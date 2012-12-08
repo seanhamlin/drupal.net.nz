@@ -21,6 +21,12 @@ function drupalnz_company_strongarm() {
         'title' => array(
           'weight' => '0',
         ),
+        'metatags' => array(
+          'weight' => '9',
+        ),
+        'path' => array(
+          'weight' => '8',
+        ),
       ),
       'display' => array(),
     ),
