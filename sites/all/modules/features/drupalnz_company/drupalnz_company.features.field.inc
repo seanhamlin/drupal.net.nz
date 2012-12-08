@@ -85,6 +85,86 @@ function drupalnz_company_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-company-field_address'.
+  $fields['node-company-field_address'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_address',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'addressfield',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'addressfield',
+    ),
+    'field_instance' => array(
+      'bundle' => 'company',
+      'default_value' => array(
+        0 => array(
+          'element_key' => 'node|company|field_address|und|0',
+          'thoroughfare' => '',
+          'premise' => '',
+          'locality' => '',
+          'administrative_area' => '',
+          'postal_code' => '',
+          'country' => 'NZ',
+        ),
+      ),
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'addressfield',
+          'settings' => array(
+            'format_handlers' => array(
+              0 => 'address',
+            ),
+            'use_widget_handlers' => 1,
+          ),
+          'type' => 'addressfield_default',
+          'weight' => 11,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '0',
+        ),
+      ),
+      'entity_type' => 'node',
+      'fences_wrapper' => 'div',
+      'field_name' => 'field_address',
+      'label' => 'Address',
+      'required' => 1,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'addressfield',
+        'settings' => array(
+          'available_countries' => array(
+            'NZ' => 'NZ',
+          ),
+          'format_handlers' => array(
+            'address' => 'address',
+            'address-hide-country' => 'address-hide-country',
+            'organisation' => 0,
+            'name-full' => 0,
+            'name-oneline' => 0,
+          ),
+        ),
+        'type' => 'addressfield_standard',
+        'weight' => '5',
+      ),
+    ),
+  );
+
   // Exported field: 'node-company-field_facebook'.
   $fields['node-company-field_facebook'] = array(
     'field_config' => array(
@@ -453,7 +533,7 @@ function drupalnz_company_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '0',
         ),
       ),
       'entity_type' => 'node',
@@ -791,8 +871,236 @@ function drupalnz_company_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-company-meta_abstract'.
+  $fields['node-company-meta_abstract'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'meta_abstract',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'metatags_quick',
+      'settings' => array(
+        'max_length' => '160',
+        'meta_name' => 'abstract',
+      ),
+      'translatable' => '0',
+      'type' => 'metatags_quick',
+    ),
+    'field_instance' => array(
+      'bundle' => 'company',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'metatags_quick',
+          'settings' => array(),
+          'type' => 'metatags_quick_default',
+          'weight' => 12,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'meta_abstract',
+      'formatter' => 'metatags_quick_default',
+      'label' => '(Meta)Abstract',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'metatags_quick',
+        'settings' => array(),
+        'type' => 'metatags_quick_textfield',
+        'weight' => 0,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-company-meta_canonical'.
+  $fields['node-company-meta_canonical'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'meta_canonical',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'metatags_quick',
+      'settings' => array(
+        'max_length' => '160',
+        'meta_name' => 'canonical',
+      ),
+      'translatable' => '0',
+      'type' => 'metatags_quick',
+    ),
+    'field_instance' => array(
+      'bundle' => 'company',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'metatags_quick',
+          'settings' => array(),
+          'type' => 'metatags_quick_default',
+          'weight' => 13,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'meta_canonical',
+      'formatter' => 'metatags_quick_default',
+      'label' => '(Meta)Canonical URL',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'metatags_quick',
+        'settings' => array(),
+        'type' => 'metatags_quick_textfield',
+        'weight' => 0,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-company-meta_description'.
+  $fields['node-company-meta_description'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'meta_description',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'metatags_quick',
+      'settings' => array(
+        'max_length' => '160',
+        'meta_name' => 'description',
+      ),
+      'translatable' => '0',
+      'type' => 'metatags_quick',
+    ),
+    'field_instance' => array(
+      'bundle' => 'company',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'metatags_quick',
+          'settings' => array(),
+          'type' => 'metatags_quick_default',
+          'weight' => 14,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'meta_description',
+      'formatter' => 'metatags_quick_default',
+      'label' => '(Meta)Description',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'metatags_quick',
+        'settings' => array(),
+        'type' => 'metatags_quick_textarea',
+        'weight' => 0,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-company-meta_keywords'.
+  $fields['node-company-meta_keywords'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'meta_keywords',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'metatags_quick',
+      'settings' => array(
+        'max_length' => '160',
+        'meta_name' => 'keywords',
+      ),
+      'translatable' => '0',
+      'type' => 'metatags_quick',
+    ),
+    'field_instance' => array(
+      'bundle' => 'company',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'metatags_quick',
+          'settings' => array(),
+          'type' => 'metatags_quick_default',
+          'weight' => 15,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'meta_keywords',
+      'formatter' => 'metatags_quick_default',
+      'label' => '(Meta)Keywords',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'metatags_quick',
+        'settings' => array(),
+        'type' => 'metatags_quick_textfield',
+        'weight' => 0,
+      ),
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
+  t('(Meta)Abstract');
+  t('(Meta)Canonical URL');
+  t('(Meta)Description');
+  t('(Meta)Keywords');
   t('Address');
   t('Description');
   t('Facebook');
