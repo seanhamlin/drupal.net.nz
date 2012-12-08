@@ -21,13 +21,13 @@ function drupalnz_company_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'External links',
-    'weight' => '10',
+    'weight' => '7',
     'children' => array(
       0 => 'field_website',
       1 => 'field_links',
-      2 => 'field_twitter',
+      2 => 'field_facebook',
       3 => 'field_linkedin',
-      4 => 'field_facebook',
+      4 => 'field_twitter',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
