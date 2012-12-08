@@ -54,6 +54,10 @@ css[global.css][name] = Your custom global styles
 css[global.css][description] = This file holds all the globally active custom CSS of your theme.
 css[global.css][options][weight] = 10
 
+css[minor-layouts.css][name] = Helper for layouts
+css[minor-layouts.css][description] = additional layouts, column widths that can be called by fieldsets in field UI and views UI.
+css[minor-layouts.css][options][weight] = 10
+
 ; THEME SETTINGS (DEFAULTS)
 
 settings[alpha_grid] = 'alpha_default'
