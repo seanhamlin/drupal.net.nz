@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the drupalnz_plain_page feature.
+ */
+
+include_once 'drupalnz_plain_page.features.inc';

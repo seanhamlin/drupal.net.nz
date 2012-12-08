@@ -1,0 +1,10 @@
+<?php
+
+/**
+ * Enable Plain Page content type
+ */
+function drupalnz_config_update_7001(&$sandbox) {
+  if (FALSE == module_enable(array('drupalnz_plain_page'), TRUE)) {
+    watchdog('drupalnz_config', t('Plain Page did not enable. :('), array(), WATCHDOG_ERROR);
+  }
+}

@@ -1,0 +1,4 @@
+name = Drupal NZ Config
+description = Config and install functions.
+core = 7.x
+
