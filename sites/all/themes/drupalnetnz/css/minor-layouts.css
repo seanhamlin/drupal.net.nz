@@ -4,8 +4,10 @@
  */
 
 .col-one-third {
+  float:left;
   width:33%;
 }
 .col-two-thirds {
+  float:left;
   width:66%;
 }
