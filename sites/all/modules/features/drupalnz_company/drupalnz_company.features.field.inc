@@ -85,86 +85,6 @@ function drupalnz_company_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-company-field_address'.
-  $fields['node-company-field_address'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_address',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'addressfield',
-      'settings' => array(),
-      'translatable' => '0',
-      'type' => 'addressfield',
-    ),
-    'field_instance' => array(
-      'bundle' => 'company',
-      'default_value' => array(
-        0 => array(
-          'element_key' => 'node|company|field_address|und|0',
-          'thoroughfare' => '',
-          'premise' => '',
-          'locality' => '',
-          'administrative_area' => '',
-          'postal_code' => '',
-          'country' => 'NZ',
-        ),
-      ),
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'addressfield',
-          'settings' => array(
-            'format_handlers' => array(
-              0 => 'address',
-            ),
-            'use_widget_handlers' => 1,
-          ),
-          'type' => 'addressfield_default',
-          'weight' => 11,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '0',
-        ),
-      ),
-      'entity_type' => 'node',
-      'fences_wrapper' => 'div',
-      'field_name' => 'field_address',
-      'label' => 'Address',
-      'required' => 1,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'addressfield',
-        'settings' => array(
-          'available_countries' => array(
-            'NZ' => 'NZ',
-          ),
-          'format_handlers' => array(
-            'address' => 'address',
-            'address-hide-country' => 'address-hide-country',
-            'organisation' => 0,
-            'name-full' => 0,
-            'name-oneline' => 0,
-          ),
-        ),
-        'type' => 'addressfield_standard',
-        'weight' => '5',
-      ),
-    ),
-  );
-
   // Exported field: 'node-company-field_facebook'.
   $fields['node-company-field_facebook'] = array(
     'field_config' => array(
@@ -555,6 +475,77 @@ function drupalnz_company_field_default_fields() {
         'settings' => array(),
         'type' => 'phone_textfield',
         'weight' => '6',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-company-field_region'.
+  $fields['node-company-field_region'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_region',
+      'foreign keys' => array(
+        'tid' => array(
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+          'table' => 'taxonomy_term_data',
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'taxonomy',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'region',
+            'parent' => '0',
+          ),
+        ),
+      ),
+      'translatable' => '0',
+      'type' => 'taxonomy_term_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'company',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '11',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'fences_wrapper' => 'div',
+      'field_name' => 'field_region',
+      'label' => 'Region',
+      'required' => 1,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => '5',
       ),
     ),
   );
@@ -1101,7 +1092,6 @@ function drupalnz_company_field_default_fields() {
   t('(Meta)Canonical URL');
   t('(Meta)Description');
   t('(Meta)Keywords');
-  t('Address');
   t('Description');
   t('Facebook');
   t('If you have a LinkedIn account, enter it\'s URL here.');
@@ -1111,6 +1101,7 @@ function drupalnz_company_field_default_fields() {
   t('Links');
   t('Logo');
   t('Phone number');
+  t('Region');
   t('Sectors');
   t('Services');
   t('The main contact phone number');
