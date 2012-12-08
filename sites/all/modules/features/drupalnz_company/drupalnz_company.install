@@ -7,3 +7,11 @@
 function drupalnz_company_update_7001(&$sandbox) {
   field_delete_field('field_showcases');
 }
+
+/**
+ * Remove the address field field as does not support views exposed filters.
+ */
+function drupalnz_company_update_7002(&$sandbox) {
+  field_delete_field('field_address');
+  module_disable(array('addressfield'));
+}
