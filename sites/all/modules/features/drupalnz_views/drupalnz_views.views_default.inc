@@ -46,7 +46,7 @@ function drupalnz_views_views_default_views() {
     'image_style' => '',
     'image_link' => '',
   );
-  /* Field: Content: Website */
+  /* Field: Content: Site URL */
   $handler->display->display_options['fields']['field_website']['id'] = 'field_website';
   $handler->display->display_options['fields']['field_website']['table'] = 'field_data_field_website';
   $handler->display->display_options['fields']['field_website']['field'] = 'field_website';
@@ -55,20 +55,15 @@ function drupalnz_views_views_default_views() {
   $handler->display->display_options['fields']['field_website']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_website']['click_sort_column'] = 'url';
   $handler->display->display_options['fields']['field_website']['type'] = 'link_url';
-  /* Field: Content: Address */
-  $handler->display->display_options['fields']['field_address']['id'] = 'field_address';
-  $handler->display->display_options['fields']['field_address']['table'] = 'field_data_field_address';
-  $handler->display->display_options['fields']['field_address']['field'] = 'field_address';
-  $handler->display->display_options['fields']['field_address']['label'] = '';
-  $handler->display->display_options['fields']['field_address']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_address']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_address']['click_sort_column'] = 'country';
-  $handler->display->display_options['fields']['field_address']['settings'] = array(
-    'use_widget_handlers' => 1,
-    'format_handlers' => array(
-      'address' => 'address',
-    ),
-  );
+  /* Field: Content: Region */
+  $handler->display->display_options['fields']['field_region']['id'] = 'field_region';
+  $handler->display->display_options['fields']['field_region']['table'] = 'field_data_field_region';
+  $handler->display->display_options['fields']['field_region']['field'] = 'field_region';
+  $handler->display->display_options['fields']['field_region']['label'] = '';
+  $handler->display->display_options['fields']['field_region']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_region']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_region']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['field_region']['delta_offset'] = '0';
   /* Field: Content: Phone number */
   $handler->display->display_options['fields']['field_phone']['id'] = 'field_phone';
   $handler->display->display_options['fields']['field_phone']['table'] = 'field_data_field_phone';
