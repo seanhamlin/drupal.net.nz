@@ -1,23 +1,278 @@
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
 
+body {
+	font-family: Arial, Helvetica, sans-serif; 
+	line-height: 1.4em;
+	color:#666;
+	background-color: #f2f2f2;
+  word-wrap: break-word;
+}
+
+
+
+body.cke_show_borders { 
+	background: none;
+	font-size: 75%;
+}
+/* System css reset */
+.item-list .title {
+  font-weight: normal; 
+}
+
+/* CONTENT STYLES --------------------------- */
+
+/* Remove negative letter spacing */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0;  
+  font-weight: normal;
+}
+
+h2, h3, h4, p.intro {	
+	color: #333;
+	line-height: 1.3em;
+}
+
+h1 {
+	font-size:60px;
+	color: #333;	
+}
+h1.title{
+  color: #193d49;
+  font-size: 35px;   
+  margin-bottom: 13px;
+  text-transform: uppercase;  
+  line-height: 0.9em;
+  font-weight: normal;
+  display: inline-block;
+}
+
+
+h1.site-name p a, h2.site-name a{
+  font-size: 36px;
+}
+
+h2 {
+	/* font-size: 23px; */
+	color: #333;
+	margin: 0px 0 8px;
+}
+
+h2.block-title, 
+h2.node-title,
+h2.node-title a,
+.block-menu-block h2.block-title{
+	color: #333;
+	margin: 0px 0 8px;
+	font-size:20px;
+  font-weight: normal;
+}
+
+h2.block-title{
+  color: #15728a;  
+}
+
+p.intro {
+	font-size:24px;
+	color: #377e8f;
+	margin: 0 0 15px;
+	font-weight: normal;
+}
+
+h3 {
+	font-size:20px;
+	margin: 20px 0 8px;
+	font-weight: normal;
+}
+.about-wrapper h3{
+  margin-top: 0;
+}
+
+h4 {
+	font-size:1.4em;
+	margin: 20px 0 8px;
+	font-weight: normal;
+}
+.no-margin-top {
+	margin-top: 0;
+}
+.no-margin-bottom {
+	margin-bottom: 0;
+}
+
+p {
+	margin: 0 0 0.833em;
+	font-size: 14px;
+	line-height: 150%;
+}
+
+a {
+	color: #377e8f;
+	cursor: pointer;
+	text-decoration: none;
+	padding-bottom: 1px;
+}
+a:link, a:visited {
+	text-decoration: none;
+  color: #15728a;
+}
+a:hover, a:focus ,
+.more a:hover, a:hover.more{
+	color:#999;
+}
+p a, a{
+	font-size: 14px;
+  text-decoration: underline;
+}
+
+sub, sup { line-height: 0.5em; font-size: 0.8em; }
+sup { vertical-align: text-top; } 
+sub { vertical-align: text-bottom; }
+
+hr { background: none repeat scroll 0 0 #e3e3e3; }
+
+blockquote {
+	font-family: Arial, serif;
+	font-weight:normal;
+	font-style: italic;
+	color: #377E8F;
+	line-height: 1.3em;
+	font-size: 22px;
+	padding: 8px 0;
+	margin: 16px 0;	
+}
+
+blockquote p {
+	line-height: 1.3em;
+	font-size: 22px;
+  margin-bottom: 0;
+}
+
+.brief-quote blockquote, .brief-pullout blockquote {
+	border-top:0;
+	border-bottom:0;
+	padding: 0;
+	margin: 0;
+}
+
+.brief-pullout, .brief-quote {
+	margin-bottom: 60px;
+}
+
+.brief-quote blockquote p {
+	margin-bottom: 0.4em;
+}
+
+.brief-quote p.quote-author {
+	font-size: 11px;
+	font-style: normal;
+	border-bottom: 1px solid #dcdcdc;
+	display: block;
+	padding-bottom: 15px;
+}
+
+/* - Lists */
+.page ul, .cke_show_borders ul {    
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.page ul ul, .cke_show_borders ul ul {  
+  margin: 0.25em 0;
+}
+
+.page ul li {
+  margin-bottom: 0.5em;
+}
+
+
+.page ol {
+    list-style: decimal inside none;
+    margin-bottom: 1em;
+    margin-left: 0;
+    padding-left: 10px;
+    font-size: 14px;
+	line-height: 22px;
+}
+
+.page ol ol {
+    list-style: upper-alpha inside none;
+    margin: 0.75em 0;
+    padding-left: 10px;
+}
+
+.page ol li {
+    list-style-position: inside;
+    margin-bottom: 0.5em;
+}
+
+
+/* global pager overrides */
+.item-list .pager {
+	text-align: left;
+	float: right;
+}
+
+/* - Tables */
+
+table {
+    border-bottom: 1px solid #dcdcdc;
+    border-top: 1px solid #dcdcdc;
+    border-left: none;
+    border-right: none;
+    margin: 30px 0;
+    width: 100%;
+}
+table caption{
+  display:none;
+}
+
+table th, thead th {
+    border: 1px solid #dcdcdc;
+    color: #fff;
+    padding: 5px 15px;
+    text-align: left;    
+    font-weight: bold;
+    background-color: #3e91a5;
+    font-style: normal;
+}
+
+tr:hover td, tr.even:hover td.active, tr.odd:hover td.active {
+	background-color: #fff;
+}
+
+table tbody td {
+    padding: 5px 15px;
+    border: 1px solid #dcdcdc;
+}
+
+table tbody tr, table thead tr {
+    border-bottom: none;
+}
+
+table tbody tr.even, 
+table tbody tr.odd, 
+table tbody tr.even td {
+    background-color: #f4fafa;
+}
+
+
 /* logo */
-.block-logo {
-  
-}
-.region-branding-inner  .logo-img {
-  float: left;
-  margin-right: 20px;
-}
+
 .block-logo, .block-site-name {
   float: left;
+}
+
+.zone-branding-wrapper {
+  margin-bottom: 20px;
 }
 
 
 /* Menu */
 .zone-menu-wrapper {  
   background: #005f7f url('img/menu_bg.png') repeat-x;
-  padding: 10px 0px;
+  padding: 0px 0px;
+  margin-bottom: 20px;
 }
 .menu-name-main-menu {
     right: 0;
@@ -28,24 +283,32 @@
     float: left;
     list-style: none outside none;
     margin: 0;
-    padding: 0 0 0 19px;
+    padding: 0 0 0 0px;
 }
 
-.menu-name-main-menu .menu li.first {
-    background: none repeat scroll 0 0 transparent;
-    padding: 0;
+.menu-name-main-menu .menu li a{
+  padding: 10px 10px;
+  border-right: 1px solid #81bae9;
+  display: inline-block;
 }
+
+
+
+.menu-name-main-menu .menu li.active a, .menu-name-main-menu .menu li a:hover{
+  background-color: #1eab88;  
+}
+
 .menu-name-main-menu .menu a:link, .menu-name-main-menu .menu a:visited {
     color: #fff;   
-    font-size: 20px;
+    font-size: 16px;
     font-weight: normal;
     letter-spacing: 0;
-    line-height: 20px;
+    line-height: 18px;
     text-decoration: none;
     text-transform: uppercase;
 }
 .menu-name-main-menu .menu a:hover, .menu-name-main-menu .menu .active-trail a {
-    color: #D99700;
+    color: #fff;
 }
 
 .menu-name-main-menu ul ul {
@@ -58,4 +321,10 @@
     top: 80px;
     width: 800px;
     z-index: 99999 !important;
+}
+
+.region-preface-first-inner, 
+.region-preface-third-inner{
+  border: 1px solid #ccc; 
+  padding: 20px 20px;
 }
