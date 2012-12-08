@@ -323,8 +323,10 @@ table tbody tr.even td {
     z-index: 99999 !important;
 }
 
-.region-preface-first-inner, 
-.region-preface-third-inner{
+/*
+.front .region-preface-first-inner, 
+.front .region-preface-third-inner{
   border: 1px solid #ccc; 
   padding: 20px 20px;
 }
+*/
