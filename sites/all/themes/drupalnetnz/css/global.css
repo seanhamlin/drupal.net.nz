@@ -1,2 +1,61 @@
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+/* logo */
+.block-logo {
+  
+}
+.region-branding-inner  .logo-img {
+  float: left;
+  margin-right: 20px;
+}
+.block-logo, .block-site-name {
+  float: left;
+}
+
+
+/* Menu */
+.zone-menu-wrapper {  
+  background: #005f7f url('img/menu_bg.png') repeat-x;
+  padding: 10px 0px;
+}
+.menu-name-main-menu {
+    right: 0;
+    background-color: 005f7f;
+}
+.menu-name-main-menu .menu li {    
+    display: inline-block;
+    float: left;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0 0 0 19px;
+}
+
+.menu-name-main-menu .menu li.first {
+    background: none repeat scroll 0 0 transparent;
+    padding: 0;
+}
+.menu-name-main-menu .menu a:link, .menu-name-main-menu .menu a:visited {
+    color: #fff;   
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu-name-main-menu .menu a:hover, .menu-name-main-menu .menu .active-trail a {
+    color: #D99700;
+}
+
+.menu-name-main-menu ul ul {
+    background-color: #367980;
+    display: none;
+    left: 160px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 80px;
+    width: 800px;
+    z-index: 99999 !important;
+}
