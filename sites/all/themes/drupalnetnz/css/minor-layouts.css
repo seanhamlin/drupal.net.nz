@@ -15,3 +15,35 @@
   margin-left: 33%;
   width: 66%;
 }
+.node-company .field-label,
+.node-showcase .field-label {
+  float: left;
+  width: 33%;
+  font-size: 16px;
+  margin: 0px 0px 8px;
+  font-weight: normal;
+}
+.node-company .field-label-above,
+.node-company .field-label-inline,
+.node-showcase .field-label-above,
+.node-showcase .field-label-inline {
+  margin-left: 33%;
+  width: 66%;
+}
+.node-company .field-label-hidden,
+.node-showcase .field-label-hidden {
+  margin: 0.833em 0;
+  width: 100%;
+}
+.node-company .field-clear,
+.node-showcase .field-clear {
+  vertical-align: top;
+  clear: both;
+}
+.node-company .fieldset-legend,
+.node-showcase .fieldset-legend {
+  /* keep the font and margins the same as the above field-label values */
+  font-size: 16px;
+  margin: 0px 0px 8px;
+  font-weight: normal;
+}
