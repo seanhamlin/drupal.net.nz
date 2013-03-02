@@ -350,12 +350,11 @@ table tbody tr.even td {
     width: 800px;
     z-index: 99999 !important;
 }
-
 .region-preface-third-inner .block-menu ul li.leaf {
-   list-style: none;
-   list-style-image: none;
-   border: 1px solid #ddd;
-   padding: 20px 20px;
+    border: 1px solid #DDDDDD;
+    background-color: #74c50c;
+    list-style: none outside none;
+    padding: 10px 10px;
 }
 
 /*
@@ -419,3 +418,13 @@ display: block;
 float: none;
 font-size: 16px;
  }}
+  
+    
+    
+    
+.front-about {
+    background: transparent url('img/banner_front.png') no-repeat;
+    height: 227px;
+    width: 700px;
+    
+}
