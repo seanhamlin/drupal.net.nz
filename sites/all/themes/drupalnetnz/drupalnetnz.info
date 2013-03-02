@@ -5,6 +5,8 @@ engine = phptemplate
 screenshot = screenshot.png
 base theme = omega
 
+stylesheets[all][] = css/robby-tmp.css
+
 ; REQUIRED CORE REGIONS
 
 regions[page_top] = Page Top
