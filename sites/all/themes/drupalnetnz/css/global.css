@@ -301,6 +301,7 @@ table tbody tr.even td {
 
 .zone-branding-wrapper {
   margin-bottom: 20px;
+  padding-top:20px;
 }
 
 
@@ -402,7 +403,7 @@ max-width:48%;
 height:auto;
 }
 
-.node-plain-page .field-name-body
+.page-node-555 .node-plain-page .field-name-body
 {
 clear:both;
 }
@@ -556,9 +557,6 @@ font-size: 16px;
  }
 /*End tablet media query*/}
  
-
-
-
 
 aside .block {
   padding: 20px 20px;  
