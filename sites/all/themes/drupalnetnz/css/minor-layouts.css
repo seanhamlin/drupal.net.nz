@@ -11,3 +11,7 @@
   float:left;
   width:66%;
 }
+.col-indented {
+  margin-left: 33%;
+  width: 66%;
+}
