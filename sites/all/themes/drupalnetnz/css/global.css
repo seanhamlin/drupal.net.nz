@@ -385,24 +385,52 @@ table tbody tr.even td {
   padding: 20px 0px;
 }
 
+/*PAGE IMAGES*/
+.node-plain-page .field-type-image img
+{
+float:left;
+margin: 0px 10px 10px 0px;
+}
 
+.node-plain-page .field-group-format-wrapper
+{
+clear:both;
+}
  
- /*Roxs general fixes*/
+ /*FRONT*/
  
  .front-about {
 background: transparent url('img/banner_front.png') no-repeat right;
-height: 227px;
+height: 187px;
 width: auto;
+padding:20px;
 }
+
+ .front-about h3
+ {
+ margin-top:0;
+ }
+
+  .front-about p
+ {
+ display:block;
+ width:50%;
+ }
 
  /*Mobile overrides*/
   @media screen and (max-width: 450px){
-  
-   .front-about {
+.front-about {
 background: transparent url('img/banner_front.png') no-repeat left;
-height: 227px;
-width: auto;
-}}
+} 
+
+  .front-about p
+ {
+ display:block;
+ width:100%;
+ }
+
+/*End 450w media query*/}
+
     @media screen and (max-width: 480px){
  .block-menu-menu-footer-navigation {
 float: none;
@@ -417,8 +445,20 @@ float: none;
 display: block;
 float: none;
 font-size: 16px;
- }}
+}
+
+ /*End 480w media query*/}
   
-    
-    
+ /*Tablet widths*/
+@media screen and (max-width: 980px) and (min-width: 700px) {
+
+  .front-about p
+ {
+ display:block;
+ width:40%;
+ }
+
+
+/*End tablet media query*/}
+ 
     
