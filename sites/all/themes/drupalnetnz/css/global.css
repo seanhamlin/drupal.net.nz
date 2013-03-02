@@ -389,6 +389,14 @@ table tbody tr.even td {
 {
 float:left;
 margin: 0px 10px 10px 0px;
+width:210px;
+max-width:48%;
+height:auto;
+}
+
+.node-plain-page .field-name-body
+{
+clear:both;
 }
 
 .node-plain-page .field-group-format-wrapper
@@ -416,6 +424,33 @@ padding:20px;
  width:50%;
  }
 
+ .region-content .block-main, .block.front-slider {
+  padding: 20px 20px;  
+  background: transparent url('./img/transparent_bg.png') repeat;
+}
+
+.front-showcase{
+  background: transparent url('./img/transparent_bg.png') repeat;
+}
+
+h1#page-title {
+  font-weight: bold;
+  color: #0078AD;
+}
+ 
+ /*CAROUSEL*/
+ .jcarousel-skin-default .jcarousel-container-horizontal
+ {
+ width:auto;
+ overflow:hidden;
+ }
+ 
+ .jcarousel-container.jcarousel-container-horizontal
+ {
+  overflow:hidden;
+ }
+ 
+ 
  
  /*Shortcuts menu block*/
  
@@ -426,6 +461,11 @@ display: block;
 height: 46px;
 line-height: 46px;
  }
+ 
+  .block-menu-menu-front-shortcut ul li a:hover
+  {
+  color:white;
+  }
  
 .block-menu-menu-front-shortcut ul li:nth-child(1)
 {background:url("img/search-icon.png") 10px center no-repeat}
@@ -449,6 +489,11 @@ background: transparent url('img/banner_front.png') no-repeat left;
  }
 
 /*End 450w media query*/}
+
+    @media screen and (max-width: 700px){
+ .front-about{
+margin-bottom: 10px;
+}
 
     @media screen and (max-width: 480px){
  .block-menu-menu-footer-navigation {
@@ -477,19 +522,17 @@ font-size: 16px;
  width:40%;
  }
 
-
 /*End tablet media query*/}
  
-.region-content .block-main {
+
+
+
+
+aside .block {
   padding: 20px 20px;  
   background: transparent url('./img/transparent_bg.png') repeat;
 }
 
-.front-showcase{
-  background: transparent url('./img/transparent_bg.png') repeat;
-}
-
-h1#page-title {
-  font-weight: bold;
-  color: #0078AD;
+.section-footer {
+  margin-top: 40px; 
 }
