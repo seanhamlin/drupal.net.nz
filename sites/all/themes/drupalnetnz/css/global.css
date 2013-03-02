@@ -354,7 +354,6 @@ table tbody tr.even td {
     border: 1px solid #DDDDDD;
     background-color: #74c50c;
     list-style: none outside none;
-    padding: 10px 10px;
 }
 
 /*
@@ -417,6 +416,26 @@ padding:20px;
  width:50%;
  }
 
+ 
+ /*Shortcuts menu block*/
+ 
+ .block-menu-menu-front-shortcut ul li a
+ {
+ padding-left: 55px;
+display: block;
+height: 46px;
+line-height: 46px;
+ }
+ 
+.block-menu-menu-front-shortcut ul li:nth-child(1)
+{background:url("img/search-icon.png") 10px center no-repeat}
+.block-menu-menu-front-shortcut ul li:nth-child(2)
+{background:url("img/date-icon.png") 10px center no-repeat}
+.block-menu-menu-front-shortcut ul li:nth-child(3)
+{background:url("img/list-icon.png") 10px center no-repeat}
+ .block-menu-menu-front-shortcut ul li:nth-child(4)
+{background:url("img/star-icon.png") 10px center no-repeat}
+
  /*Mobile overrides*/
   @media screen and (max-width: 450px){
 .front-about {
@@ -461,4 +480,16 @@ font-size: 16px;
 
 /*End tablet media query*/}
  
-    
+.region-content .block-main {
+  padding: 20px 20px;  
+  background: transparent url('./img/transparent_bg.png') repeat;
+}
+
+.front-showcase{
+  background: transparent url('./img/transparent_bg.png') repeat;
+}
+
+h1#page-title {
+  font-weight: bold;
+  color: #0078AD;
+}
