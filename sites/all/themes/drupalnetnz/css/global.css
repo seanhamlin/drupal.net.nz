@@ -4,7 +4,7 @@
 
 /*MOBILE*/
  /*PRIMARY MENU MOBILE*/
- @media screen and (max-width: 480px){
+ @media screen and (max-width: 740px){
  /*resize home link*/
  .responsive-layout-mobile .menu-block-1.menu-name-main-menu li.first
  {
@@ -27,6 +27,9 @@ background-image:url("img/home.png") ;
  }
  
  /*End 480w media query*/}
+ 
+ html
+ {background-color:#e9e0d6}
  
  
 body {
@@ -199,6 +202,11 @@ blockquote p {
 	padding-bottom: 15px;
 }
 
+#zone-content
+{
+padding-bottom:20px;
+}
+
 /* - Lists */
 .page ul, .cke_show_borders ul {    
 	font-size: 14px;
@@ -365,7 +373,7 @@ table tbody tr.even td {
 */
 .section-footer {
   background-color: #e9e0d6;
-  min-height: 250px;
+  /*min-height: 150px;*/
 }
 
 .block-menu-footer-menu .menu li,
@@ -429,6 +437,11 @@ padding:20px;
   background: transparent url('./img/transparent_bg.png') repeat;
 }
 
+.front .block-main
+{
+padding:0;
+}
+
 .front-showcase{
   background: transparent url('./img/transparent_bg.png') repeat;
 }
@@ -448,6 +461,27 @@ h1#page-title {
  .jcarousel-container.jcarousel-container-horizontal
  {
   overflow:hidden;
+ }
+ 
+ a.jcarousel-prev
+ {
+ display: block;
+width: 50px;
+height: 50px;
+position: absolute;
+background: url("img/prev-button.png");
+top: 40px;
+}
+
+ a.jcarousel-next
+ {
+  display: block;
+width: 50px;
+height: 50px;
+position: absolute;
+background:  url("img/next-button.png");
+top: 40px;
+right:0;
  }
  
  
@@ -493,7 +527,7 @@ background: transparent url('img/banner_front.png') no-repeat left;
     @media screen and (max-width: 700px){
  .front-about{
 margin-bottom: 10px;
-}
+}/*End 700w media query*/}
 
     @media screen and (max-width: 480px){
  .block-menu-menu-footer-navigation {
@@ -510,7 +544,6 @@ display: block;
 float: none;
 font-size: 16px;
 }
-
  /*End 480w media query*/}
   
  /*Tablet widths*/
@@ -521,7 +554,6 @@ font-size: 16px;
  display:block;
  width:40%;
  }
-
 /*End tablet media query*/}
  
 
