@@ -1,13 +1,42 @@
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
 
+
+/*MOBILE*/
+ /*PRIMARY MENU MOBILE*/
+ @media screen and (max-width: 480px){
+ /*resize home link*/
+ .responsive-layout-mobile .menu-block-1.menu-name-main-menu li.first
+ {
+width:38px;
+}
+
+/*Apply home background image, hide text*/
+.responsive-layout-mobile .menu-block-1.menu-name-main-menu li.first a
+{
+text-indent:-2000px;
+background-image:url("img/home.png") ;
+ padding:10px 20px;
+}
+
+/*resize other links when space running low*/
+ .responsive-layout-mobile .menu-block-1.menu-name-main-menu li a
+ {
+ font-size: 14px;
+ padding:10px 10px;
+ }
+ 
+ /*End 480w media query*/}
+ 
+ 
 body {
 	font-family: Arial, Helvetica, sans-serif; 
 	line-height: 1.4em;
-	color:#666;
-	background-color: #fff;
+	color:#666;	    
+  background: #d4f9f9 url("img/bg-repeat.png") repeat-x;
   word-wrap: break-word;
 }
+
 
 body.cke_show_borders { 
 	background: none;
@@ -269,9 +298,10 @@ table tbody tr.even td {
 
 /* Menu */
 .zone-menu-wrapper {  
-  background: #005f7f url('img/menu_bg.png') repeat-x;
+  background: #0078ad;
   padding: 0px 0px;
   margin-bottom: 20px;
+  border-top: 5px solid #74c50c;
 }
 .menu-name-main-menu {
     right: 0;
@@ -286,15 +316,14 @@ table tbody tr.even td {
 }
 
 .menu-name-main-menu .menu li a{
-  padding: 10px 10px;
-  border-right: 1px solid #81bae9;
+  padding: 10px 20px;  
   display: inline-block;
 }
 
 
 
 .menu-name-main-menu .menu li.active a, .menu-name-main-menu .menu li a:hover{
-  background-color: #1eab88;  
+  background-color: #74c50c;  
 }
 
 .menu-name-main-menu .menu a:link, .menu-name-main-menu .menu a:visited {
@@ -321,12 +350,11 @@ table tbody tr.even td {
     width: 800px;
     z-index: 99999 !important;
 }
-
 .region-preface-third-inner .block-menu ul li.leaf {
-   list-style: none;
-   list-style-image: none;
-   border: 1px solid #ddd;
-   padding: 20px 20px;
+    border: 1px solid #DDDDDD;
+    background-color: #74c50c;
+    list-style: none outside none;
+    padding: 10px 10px;
 }
 
 /*
@@ -337,7 +365,8 @@ table tbody tr.even td {
 }
 */
 .section-footer {
-  background-color: #f7f7f7;
+  background-color: #e9e0d6;
+  min-height: 250px;
 }
 
 .block-menu-footer-menu .menu li,
@@ -351,7 +380,45 @@ table tbody tr.even td {
    font-size: 10px;
 }
 
-#block-menu-menu-footer-menu {
+.block-menu-menu-footer-navigation {
   float: right;
   padding: 20px 0px;
 }
+
+
+ 
+ /*Roxs general fixes*/
+ 
+ .front-about {
+background: transparent url('img/banner_front.png') no-repeat right;
+height: 227px;
+width: auto;
+}
+
+ /*Mobile overrides*/
+  @media screen and (max-width: 450px){
+  
+   .front-about {
+background: transparent url('img/banner_front.png') no-repeat left;
+height: 227px;
+width: auto;
+}}
+    @media screen and (max-width: 480px){
+ .block-menu-menu-footer-navigation {
+float: none;
+}
+ 
+  .block-menu-menu-footer-navigation .menu li {
+display: block;
+float: none;
+}
+ 
+ .block-menu-menu-footer-navigation .menu li a {
+display: block;
+float: none;
+font-size: 16px;
+ }}
+  
+    
+    
+    
