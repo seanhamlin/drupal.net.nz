@@ -398,8 +398,7 @@ table tbody tr.even td {
 {
 float:left;
 margin: 0px 10px 10px 0px;
-width:210px;
-max-width:48%;
+max-width:210px;
 height:auto;
 }
 
@@ -408,7 +407,7 @@ height:auto;
 clear:both;
 }
 
-.node-plain-page .field-group-format-wrapper
+.page-node-555 .node-plain-page .field-group-format-wrapper
 {
 clear:both;
 }
