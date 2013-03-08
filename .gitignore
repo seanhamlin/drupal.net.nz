@@ -1,6 +1,10 @@
 # Ignore configuration files that may contain sensitive information.
 sites/*/settings*.php
 
+# Ingore paths that contain information custom to this install
+sites/sites.php
+sites/drupal.org.nz
+
 # Ignore paths that contain user-generated content.
 sites/*/files
 sites/*/private
