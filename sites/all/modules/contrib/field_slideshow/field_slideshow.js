@@ -59,13 +59,13 @@
               };
               if (settings.pager == 'carousel') {
                 var carouselops = {
-                  buttonNextHTML: null,
-                  buttonPrevHTML: null,
                   visible: parseInt(settings.carousel_visible),
                   scroll: parseInt(settings.carousel_scroll),
                   animation: parseInt(settings.carousel_speed),
                   vertical: settings.carousel_vertical,
                   initCallback: function(carousel) {
+                    $(".jcarousel-prev").addClass('carousel-prev');
+                    $(".jcarousel-next").addClass('carousel-next');
                     if (carousel.options.visible && num_slides <= carousel.options.visible) {
                       // hide the carousel next and prev if all slide thumbs are displayed
                       $(".carousel-prev, .carousel-next", carousel.container.parent()).addClass("hidden");
@@ -81,6 +81,10 @@
                     });
                   }
                 };
+                if (!settings.carousel_skin) {
+                  carouselops.buttonNextHTML = null;
+                  carouselops.buttonPrevHTML = null;
+                }
                 if (parseInt(settings.carousel_circular)) carouselops.wrap = 'circular';
 
                 $("#" + i + "-carousel").jcarousel(carouselops);

@@ -31,7 +31,7 @@ function shadowbox_global_settings() {
   // Test
   $form['shadowbox']['test'] = array(
     '#prefix' => '<div id="shadowbox-settings-test">',
-    '#markup' => l(t('Test Shadowbox with the current settings.'), 'modules/image/sample.png', array('attributes' => array('rel' => 'shadowbox'))),
+    '#markup' => l(t('Test Shadowbox with the current settings.'), drupal_get_path('module', 'image') . '/sample.png', array('attributes' => array('rel' => 'shadowbox'))),
     '#suffix' => '</div>',
   );
 
