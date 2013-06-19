@@ -12,3 +12,7 @@ sites/*/private
 # custom rules
 .project
 .settings
+
+# Aegir manages these
+drushrc.php
+*/drushrc.php
