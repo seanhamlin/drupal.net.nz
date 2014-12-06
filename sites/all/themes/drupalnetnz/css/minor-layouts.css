@@ -1,6 +1,7 @@
 @CHARSET "UTF-8";
 /**
  * This CSS supports some of the per-field layouts done in the UI
+ * Use the generic named classes below with display_suite or fieldgroups.
  */
 
 .col-one-third {
@@ -15,6 +16,24 @@
   margin-left: 33%;
   width: 66%;
 }
+
+.float-left {
+  float:left;
+}
+.float-right {
+  float:right;
+}
+.cleared {
+  clear:both;
+}
+.inline-items .field-item {
+  float:left;
+  width:auto;
+  margin:0.15em;
+}
+
+/* Company and Showcase teasers and pages */
+
 .node-company .field-label,
 .node-showcase .field-label {
   float: left;
@@ -23,15 +42,17 @@
   margin: 0px 0px 8px;
   font-weight: normal;
 }
-.node-company .field-label-above,
-.node-company .field-label-inline,
-.node-showcase .field-label-above,
-.node-showcase .field-label-inline {
+/* Most fields have labels */
+.node-company .field-label-above > .field-items,
+.node-company .field-label-inline > .field-items,
+.node-showcase .field-label-above > .field-items,
+.node-showcase .field-label-inline > .field-items {
   margin-left: 33%;
   width: 66%;
 }
-.node-company .field-label-hidden,
-.node-showcase .field-label-hidden {
+/* Fields with no visible label get full-width */
+.node-company .field-label-hidden > .field-item ,
+.node-showcase .field-label-hidden > .field-item {
   margin: 0.833em 0;
   width: 100%;
 }
