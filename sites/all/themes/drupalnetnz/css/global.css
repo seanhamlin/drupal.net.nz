@@ -86,7 +86,7 @@ h1.site-name p a, h2.site-name a{
 h2 {
 	/* font-size: 23px; */
 	color: #333;
-	margin: 0px 0 8px;
+	margin: 0 0 8px;
 }
 
 h2.block-title, 
@@ -94,7 +94,7 @@ h2.node-title,
 h2.node-title a,
 .block-menu-block h2.block-title{
 	color: #333;
-	margin: 0px 0 8px;
+	margin: 0 0 8px;
 	font-size:20px;
   font-weight: normal;
 }
@@ -308,20 +308,20 @@ table tbody tr.even td {
 /* Menu */
 .zone-menu-wrapper {  
   background: #0078ad;
-  padding: 0px 0px;
+  padding: 0 0;
   margin-bottom: 20px;
   border-top: 5px solid #74c50c;
 }
 .menu-name-main-menu {
     right: 0;
-    background-color: 005f7f;
+    background-color: #005f7f;
 }
 .menu-name-main-menu .menu li {    
     display: inline-block;
     float: left;
     list-style: none outside none;
     margin: 0;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
 }
 
 .menu-name-main-menu .menu li a{
@@ -389,7 +389,7 @@ table tbody tr.even td {
 }
 
 .section-footer .block {
-  padding: 20px 0px;
+  padding: 20px 0;
 }
 .block-menu-menu-footer-navigation {
   float: right;
@@ -399,7 +399,7 @@ table tbody tr.even td {
 .node-plain-page .field-name-field-page-image img
 {
 float:left;
-margin: 0px 10px 10px 0px;
+margin: 0 10px 10px 0;
 max-width:210px;
 height:auto;
 }
