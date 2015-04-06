@@ -1,7 +1,7 @@
 #!/usr/local/bin/php
 <?php
 /**
-* $Id: example.php 37 2008-11-27 00:31:13Z don.schonknecht $
+* $Id$
 *
 * S3 class usage
 */
@@ -55,7 +55,7 @@ if ($s3->putBucket($bucketName, S3::ACL_PUBLIC_READ)) {
 
 		// Get object info
 		$info = $s3->getObjectInfo($bucketName, baseName($uploadFile));
-		echo "S3::getObjecInfo(): Info for {$bucketName}/".baseName($uploadFile).': '.print_r($info, 1);
+		echo "S3::getObjectInfo(): Info for {$bucketName}/".baseName($uploadFile).': '.print_r($info, 1);
 
 
 		// You can also fetch the object into memory
