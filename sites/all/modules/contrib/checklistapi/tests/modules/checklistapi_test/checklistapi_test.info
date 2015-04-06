@@ -6,9 +6,9 @@ core = 7.x
 dependencies[] = checklistapi
 hidden = TRUE
 
-; Information added by drupal.org packaging script on 2012-10-25
-version = "7.x-1.0-beta4"
+; Information added by Drupal.org packaging script on 2014-08-25
+version = "7.x-1.2"
 core = "7.x"
 project = "checklistapi"
-datestamp = "1351132567"
+datestamp = "1409004834"
 
